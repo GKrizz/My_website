@@ -1,0 +1,70 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007bff; /* Hover effect for links */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar a:hover {
+  background-color: #007bff; /* Changed to blue */
+  border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #007bff;
+}
+
+footer a:hover {
+  color: #fff; /* Changed to white for a clean look */
+}

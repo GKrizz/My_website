@@ -1,0 +1,24 @@
+/* Visitor Counter Styles */
+.visitor-counter {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333; /* Neutral color for text */
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f9f9f9; /* Light gray background for better visibility */
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto; /* Center align on the page */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .visitor-counter {
+        font-size: 1rem; /* Slightly smaller text for small screens */
+        padding: 0.8rem;
+    }
+}

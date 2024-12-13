@@ -1,0 +1,54 @@
+/* Music Button Styles */
+.music-button {
+    background: linear-gradient(135deg, #FF7F50, #FF6347); /* Orange gradient background */
+    border: 2px solid #FF6347; /* Darker orange border */
+    padding: 0.8rem 1.6rem; /* Larger padding for better readability */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff; /* White text */
+    font-size: 1rem; /* Adjustable font size */
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: inline-flex; /* Flexbox layout for centering */
+    align-items: center;
+    justify-content: center;
+}
+
+.music-button:hover {
+    background: linear-gradient(135deg, #FF6347, #FF4500); /* Darker orange gradient on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+.music-button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.6); /* Focus state with orange glow */
+}
+
+.music-button:active {
+    transform: translateY(1px); /* Slight shrink effect when clicked */
+}
+
+/* Make button responsive */
+@media (max-width: 768px) {
+    .music-button {
+        font-size: 0.9rem; /* Slightly smaller font size on small screens */
+        padding: 0.7rem 1.4rem; /* Adjust padding */
+    }
+}
+
+/* Modal Button Styles */
+.modal-button {
+    background-color: transparent; /* Transparent background */
+    border: none;
+    font-size: 1.5rem; /* Larger font size for visibility */
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.modal-button:hover {
+    color: #FF6347; /* Orange color on hover */
+}
+
+/* Optional: Additional styles for other buttons/modal if needed */

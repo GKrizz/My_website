@@ -1,0 +1,62 @@
+/* Music Component - Flex Layout */
+.music-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    text-align: center;
+    width: 300px; /* Increased width */
+    height: 400px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bigger shadow for a more prominent card */
+    background-color: #fff;
+    padding: 1rem; /* Increased padding */
+    margin-bottom: 1.5rem;
+}
+
+.music-card video {
+    width: 100%;
+    height: 250px; /* Height for the video */
+    object-fit: contain; /* Preserve the aspect ratio without cropping or zooming */
+    border-radius: 8px;
+}
+
+.music-card p {
+    font-size: 1.2rem; /* Larger font size for title */
+    margin-top: 0.8rem;
+    font-weight: bold;
+}
+
+.music-card small {
+    font-size: 1rem; /* Larger font size for composer */
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .music-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .music-card {
+        max-width: 95%; /* Full width on smaller screens */
+        width: 100%;
+    }
+
+    .music-button {
+        margin-bottom: 0.5rem;
+    }
+
+    video {
+        width: 100%;
+        height: 250px; /* Larger video on smaller screens */
+    }
+}

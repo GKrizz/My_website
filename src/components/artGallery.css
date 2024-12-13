@@ -1,0 +1,77 @@
+/* Art Gallery Thumbnails */
+.art-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .art-gallery img {
+    width: 300px;  /* Larger thumbnail size */
+    height: 200px;
+    cursor: pointer;
+    border: 2px solid #FF6347;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .art-gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal.open {
+    display: flex;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 99, 71, 0.6); /* Orange glow */
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+  }
+  
+  .modal img {
+    width: 100%;  /* Responsive image width */
+    height: auto;
+    object-fit: contain;  /* Maintain aspect ratio */
+  }
+  
+  /* Close button */
+  .modal button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #FF6347;  /* Orange close button */
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .modal-content {
+      max-width: 95vw;  /* Allow more space on smaller screens */
+      max-height: 95vh;
+    }
+  }
+  
