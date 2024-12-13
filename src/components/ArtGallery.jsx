@@ -6,13 +6,13 @@ const ArtGallery = () => {
 
   // Sample images (replace with actual paths)
   const images = [
-    '/src/assets/images/art1.jpeg',
-    '/src/assets/images/art2.jpeg',
-    '/src/assets/images/art3.jpeg',
-    '/src/assets/images/art4.jpeg',
-    '/src/assets/images/art5.jpeg',
-    '/src/assets/images/art6.jpeg',
-  ];
+    '/assets/images/art1.jpeg',
+    '/assets/images/art2.jpeg',
+    '/assets/images/art3.jpeg',
+    '/assets/images/art4.jpeg',
+    '/assets/images/art5.jpeg',
+    '/assets/images/art6.jpeg',
+];
 
   const openModal = (img) => {
     setModalImage(img);

@@ -5,14 +5,12 @@ const Music = () => {
     const [selectedComposer, setSelectedComposer] = useState('All');
 
     const songs = [
-        // { composer: 'Ilaiyaraaja', title: 'Raja Raja Chozhan', url: '/src/assets/videos/Raja Raja Chozhan.mp4' },
-        { composer: 'Yuvan Shankar Raja', title: 'Azhagho Azhaghu', url: '/src/assets/videos/Azhagho Azhaghu.mp4' },
-        { composer: 'GV Prakash', title: 'Yaar Indha Saalai Oram', url: '/src/assets/videos/Yaar Indha Saalai Oram.mp4' },
-        { composer: 'Yuvan Shankar Raja', title: 'Venmegam Pennaga', url: '/src/assets/videos/Venmegam Pennaga.mp4' },
-        { composer: 'Santhosh Narayanan', title: 'Anel Meley Pani Thuli', url: '/src/assets/videos/Anel Meley Pani Thuli.mp4' },
-        // { composer: 'Anirudh Ravichander', title: 'Megham Karukatha', url: '/src/assets/videos/Megham Karukatha.mp4' },
+        { composer: 'Yuvan Shankar Raja', title: 'Azhagho Azhaghu', url: '/assets/videos/Azhagho Azhaghu.mp4' },
+        { composer: 'GV Prakash', title: 'Yaar Indha Saalai Oram', url: '/assets/videos/Yaar Indha Saalai Oram.mp4' },
+        { composer: 'Yuvan Shankar Raja', title: 'Venmegam Pennaga', url: '/assets/videos/Venmegam Pennaga.mp4' },
+        { composer: 'Santhosh Narayanan', title: 'Anel Meley Pani Thuli', url: '/assets/videos/Anel Meley Pani Thuli.mp4' },
     ];
-
+    
     // Filter songs based on the selected composer
     const filteredSongs =
         selectedComposer === 'All' ? songs : songs.filter(song => song.composer === selectedComposer);
